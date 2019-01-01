@@ -1,0 +1,36 @@
+﻿{
+  "status": 200,
+  "message": "Commodity List Found",
+  "data": [
+    {
+      "id": "1",
+      "name": "Balbhadrasinh parmar",
+      "mobilenumber": "9974619782",
+      "address": "61 Rajputfali ",
+      "city": "vadagam",
+      "distric": "Arvalli",
+      "state": "Gujarat",
+      "pincode": "383307"
+    },
+    {
+      "id": "1",
+      "name": "Balbhadrasinh parmar",
+      "mobilenumber": "9974619782",
+      "address": "61 Rajputfali ",
+      "city": "vadagam",
+      "distric": "Arvalli",
+      "state": "Gujarat",
+      "pincode": "383307"
+    },
+    {
+      "id": "1",
+      "name": "Balbhadrasinh parmar",
+      "mobilenumber": "9974619782",
+      "address": "61 Rajputfali ",
+      "city": "vadagam",
+      "distric": "Arvalli",
+      "state": "Gujarat",
+      "pincode": "383307"
+    }
+  ]
+}
