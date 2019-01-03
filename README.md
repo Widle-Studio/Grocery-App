@@ -18,3 +18,7 @@
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Screenshot_2018-11-01-11-58-41-662.jpeg" alt="Grocery Details" height="700" width="400">
 ### 8. Details
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Screenshot_2018-11-01-12-00-01-234.jpeg" alt="Grocery Details" height="700" width="400">
+
+
+Reference 
+- https://codecanyon.net/item/grocery-store-template/22526727
