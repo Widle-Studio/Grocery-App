@@ -1,6 +1,6 @@
 # f_groceries
 
-A new Flutter application.
+A Flutter Grocery application.
 
 ## Getting Started
 
