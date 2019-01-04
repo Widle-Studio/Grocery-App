@@ -2,6 +2,10 @@
 
 ## Flutter Grocery Shopping App Fully Working Template
 
+
+<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Animation%20-11-01-11-57-17-742%5B1%5D-ANIMATION.gif" alt="Flutter Grocery Shopping App Video Animation" height="700" width="400">
+
+
  1. Home
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Screenshot_2018-11-01-11-57-17-742%5B1%5D.jpeg" alt="Grocery Home" height="700" width="400">
  2. Category
