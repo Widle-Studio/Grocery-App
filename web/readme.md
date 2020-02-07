@@ -1,9 +1,9 @@
 # Grocery Flutter Web App 
 
 
-<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/web/mainpage.png" alt="Grocery Flutter Web - Home" height="900" width="600">
+<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/web/mainpage.png" alt="Grocery Flutter Web - Home" height="1000" width="600">
 
-<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/web/details.png" alt="Grocery Flutter Web - Details" height="900" width="600">
+<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/web/details.png" alt="Grocery Flutter Web - Details" height="1000" width="600">
 
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/web/filter.png" alt="Grocery Flutter Web - Filter" height="900" width="600">
 
