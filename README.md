@@ -1,4 +1,4 @@
-# Grocery-App
+# Grocery-App (Widle Studio - A Creative Fluter App Development Company) 
 
 ## Flutter Grocery Shopping App Fully Working Template
 
@@ -32,5 +32,4 @@ You can use this Flutter app as one big super market app to sale product of your
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Screenshot_2018-11-01-12-00-01-234.jpeg" alt="Grocery Details" height="700" width="400">
 
 
-Reference 
-- https://codecanyon.net/item/grocery-store-template/22526727
+Contact <b>Widle Studio</b> for creative flutter app development 
