@@ -13,7 +13,7 @@ const String _kGalleryAssetsPackage = 'flutter_gallery_assets';
 
 class Home_screen extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => new home();
+  State<StatefulWidget> createState() => home();
 // TODO: implement createState
 
 }
@@ -72,7 +72,7 @@ class home extends State<Home_screen> {
 
   final List<String> items = ['Balbhadra', 'Maulik', 'Roshi'];
   static const double height = 366.0;
-  String name ='My Wishlist';
+  String name = 'My Wishlist';
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -83,11 +83,9 @@ class home extends State<Home_screen> {
     final TextStyle descriptionStyle = theme.textTheme.subhead;
     ShapeBorder shapeBorder;
 
-
     return Scaffold(
-      appBar: new AppBar(
+      appBar: AppBar(
         backgroundColor: Colors.white,
-
         title: Text("Grocery store"),
         actions: <Widget>[
           IconButton(
@@ -98,47 +96,49 @@ class home extends State<Home_screen> {
                 context: context,
                 //delegate: _delegate,
               );
-
             },
           ),
-          new Padding(
+          Padding(
             padding: const EdgeInsets.all(10.0),
-            child: new Container(
+            child: Container(
               height: 150.0,
               width: 30.0,
-              child: new GestureDetector(
+              child: GestureDetector(
                 onTap: () {
                   /*Navigator.of(context).push(
-                  new MaterialPageRoute(
+                   MaterialPageRoute(
                       builder:(BuildContext context) =>
-                      new CartItemsScreen()
+                       CartItemsScreen()
                   )
               );*/
                 },
                 child: Stack(
                   children: <Widget>[
-                    new IconButton(
-                        icon: new Icon(
+                    IconButton(
+                        icon: Icon(
                           Icons.shopping_cart,
                           color: Colors.black,
                         ),
-                        onPressed: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Cart_screen()));
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Cart_screen()));
                         }),
                     list.length == 0
-                        ? new Container()
-                        : new Positioned(
-                            child: new Stack(
+                        ? Container()
+                        : Positioned(
+                            child: Stack(
                             children: <Widget>[
-                              new Icon(Icons.brightness_1,
+                              Icon(Icons.brightness_1,
                                   size: 20.0, color: Colors.orange.shade500),
-                              new Positioned(
+                              Positioned(
                                   top: 4.0,
                                   right: 5.5,
-                                  child: new Center(
-                                    child: new Text(
+                                  child: Center(
+                                    child: Text(
                                       list.length.toString(),
-                                      style: new TextStyle(
+                                      style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 11.0,
                                           fontWeight: FontWeight.w500),
@@ -153,25 +153,25 @@ class home extends State<Home_screen> {
           )
         ],
       ),
-      drawer: new Drawer(
-        child: new ListView(
+      drawer: Drawer(
+        child: ListView(
           children: <Widget>[
-            new Card(
+            Card(
               child: UserAccountsDrawerHeader(
-                accountName: new Text("Naomi A. Schultz"),
-                accountEmail: new Text("NaomiASchultz@armyspy.com"),
+                accountName: Text("Naomi A. Schultz"),
+                accountEmail: Text("NaomiASchultz@armyspy.com"),
                 onDetailsPressed: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) => Account_Screen()));
                 },
-                decoration: new BoxDecoration(
+                decoration: BoxDecoration(
                   backgroundBlendMode: BlendMode.difference,
                   color: Colors.white30,
 
-                  /* image: new DecorationImage(
-               //   image: new ExactAssetImage('assets/images/lake.jpeg'),
+                  /* image:  DecorationImage(
+               //   image:  ExactAssetImage('assets/images/lake.jpeg'),
                   fit: BoxFit.cover,
                 ),*/
                 ),
@@ -180,80 +180,102 @@ class home extends State<Home_screen> {
                         "https://www.fakenamegenerator.com/images/sil-female.png")),
               ),
             ),
-            new Card(
+            Card(
               elevation: 4.0,
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new ListTile(
+                  ListTile(
                       leading: Icon(Icons.favorite),
-                      title: new Text(name),
+                      title: Text(name),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: name,)));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Item_Screen(
+                                      toolbarname: name,
+                                    )));
                       }),
-                  new Divider(),
-                  new ListTile(
+                  Divider(),
+                  ListTile(
                       leading: Icon(Icons.history),
-                      title: new Text("Order History "),
-
-
+                      title: Text("Order History "),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Oder_History(toolbarname: ' Order History',)));
-
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Oder_History(
+                                      toolbarname: ' Order History',
+                                    )));
                       }),
                 ],
               ),
             ),
-            new Card(
+            Card(
               elevation: 4.0,
-              child: new Column(
+              child: Column(
                 children: <Widget>[
-                  new ListTile(
+                  ListTile(
                       leading: Icon(Icons.settings),
-                      title: new Text("Setting"),
+                      title: Text("Setting"),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Setting_Screen(toolbarname: 'Setting',)));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Setting_Screen(
+                                      toolbarname: 'Setting',
+                                    )));
                       }),
-                  new Divider(),
-                  new ListTile(
+                  Divider(),
+                  ListTile(
                       leading: Icon(Icons.help),
-                      title: new Text("Help"),
+                      title: Text("Help"),
                       onTap: () {
-
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Help_Screen(toolbarname: 'Help',)));
-
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Help_Screen(
+                                      toolbarname: 'Help',
+                                    )));
                       }),
                 ],
               ),
             ),
-            new Card(
+            Card(
               elevation: 4.0,
-              child: new ListTile(
+              child: ListTile(
                   leading: Icon(Icons.power_settings_new),
-                  title: new Text(
+                  title: Text(
                     "Logout",
-                    style:
-                        new TextStyle(color: Colors.redAccent, fontSize: 17.0),
+                    style: TextStyle(color: Colors.redAccent, fontSize: 17.0),
                   ),
                   onTap: () {
-                    Navigator.push(context,MaterialPageRoute(builder: (context) => Login_Screen()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Login_Screen()));
                   }),
             )
           ],
         ),
       ),
-      body: new SingleChildScrollView(
+      body: SingleChildScrollView(
         child: Container(
-          child: new Column(children: <Widget>[
-            new Row(
+          child: Column(children: <Widget>[
+            Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   _verticalD(),
-                  new GestureDetector(
+                  GestureDetector(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Item_Screen(
+                                    toolbarname: 'Fruits & Vegetables',
+                                  )));
                     },
-                    child: new Text(
+                    child: Text(
                       'Best value',
                       style: TextStyle(
                           fontSize: 20.0,
@@ -262,11 +284,16 @@ class home extends State<Home_screen> {
                     ),
                   ),
                   _verticalD(),
-                  new GestureDetector(
+                  GestureDetector(
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Item_Screen(
+                                    toolbarname: 'Fruits & Vegetables',
+                                  )));
                     },
-                    child: new Text(
+                    child: Text(
                       'Top sellers',
                       style: TextStyle(
                           fontSize: 20.0,
@@ -275,14 +302,19 @@ class home extends State<Home_screen> {
                     ),
                   ),
                   _verticalD(),
-                  new Row(
+                  Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
-                      new GestureDetector(
+                      GestureDetector(
                         onTap: () {
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Item_Screen(
+                                        toolbarname: 'Fruits & Vegetables',
+                                      )));
                         },
-                        child: new Text(
+                        child: Text(
                           'All',
                           style: TextStyle(
                               fontSize: 20.0,
@@ -298,7 +330,7 @@ class home extends State<Home_screen> {
                     ],
                   )
                 ]),
-            new Container(
+            Container(
               height: 188.0,
               margin: EdgeInsets.only(left: 5.0),
               child:
@@ -481,18 +513,23 @@ class home extends State<Home_screen> {
                 ),
               ]),
             ),
-            new Container(
+            Container(
               margin: EdgeInsets.only(top: 7.0),
-              child: new Row(
+              child: Row(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     _verticalD(),
-                    new GestureDetector(
+                    GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Item_Screen(
+                                      toolbarname: 'Fruits & Vegetables',
+                                    )));
                       },
-                      child: new Text(
+                      child: Text(
                         'Categories',
                         style: TextStyle(
                             fontSize: 20.0,
@@ -501,11 +538,16 @@ class home extends State<Home_screen> {
                       ),
                     ),
                     _verticalD(),
-                    new GestureDetector(
+                    GestureDetector(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Item_Screen(
+                                      toolbarname: 'Fruits & Vegetables',
+                                    )));
                       },
-                      child: new Text(
+                      child: Text(
                         'Popular',
                         style: TextStyle(
                             fontSize: 20.0,
@@ -514,14 +556,19 @@ class home extends State<Home_screen> {
                       ),
                     ),
                     _verticalD(),
-                    new Row(
+                    Row(
                       children: <Widget>[
-                        new GestureDetector(
+                        GestureDetector(
                           onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Item_Screen(
+                                          toolbarname: 'Fruits & Vegetables',
+                                        )));
                           },
-                          child: new Text(
-                            'Whats New',
+                          child: Text(
+                            'Whats ',
                             style: TextStyle(
                                 fontSize: 20.0,
                                 color: Colors.black26,
@@ -532,30 +579,32 @@ class home extends State<Home_screen> {
                     )
                   ]),
             ),
-            new Container(
+            Container(
               alignment: Alignment.topCenter,
               height: 700.0,
-
-              child: new GridView.builder(
+              child: GridView.builder(
                   itemCount: photos.length,
                   primary: false,
                   physics: NeverScrollableScrollPhysics(),
                   padding: const EdgeInsets.all(10.0),
-                  gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2),
                   itemBuilder: (BuildContext context, int index) {
-                    return new GestureDetector(
-                      onTap: (){
-
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
-                      },
-
-                        child: new Container(
+                    return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => Item_Screen(
+                                        toolbarname: 'Fruits & Vegetables',
+                                      )));
+                        },
+                        child: Container(
                             margin: EdgeInsets.all(5.0),
-                            child: new Card(
+                            child: Card(
                               shape: shapeBorder,
                               elevation: 3.0,
-                              child: new Container(
+                              child: Container(
                                 //  mainAxisSize: MainAxisSize.max,
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -577,11 +626,18 @@ class home extends State<Home_screen> {
                                             padding: EdgeInsets.only(
                                                 left: 3.0, bottom: 3.0),
                                             alignment: Alignment.bottomLeft,
-                                            child: new GestureDetector(
+                                            child: GestureDetector(
                                               onTap: () {
-                                                Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Screen(toolbarname: 'Fruits & Vegetables',)));
+                                                Navigator.push(
+                                                    context,
+                                                    MaterialPageRoute(
+                                                        builder: (context) =>
+                                                            Item_Screen(
+                                                              toolbarname:
+                                                                  'Fruits & Vegetables',
+                                                            )));
                                               },
-                                              child: new Text(
+                                              child: Text(
                                                 photos[index].title,
                                                 style: TextStyle(
                                                     fontSize: 18.0,
@@ -607,14 +663,11 @@ class home extends State<Home_screen> {
                                       ),
                                     ),
 
-                                    // new Text(photos[index].title.toString()),
+                                    //  Text(photos[index].title.toString()),
                                   ],
                                 ),
                               ),
-                            )
-                        )
-
-                    );
+                            )));
                   }),
             )
           ]),
@@ -624,7 +677,7 @@ class home extends State<Home_screen> {
   }
 
 /*
-  new Container(
+   Container(
   alignment: Alignment.topCenter,
   child: GridView.count(
   primary: true,
@@ -634,7 +687,7 @@ class home extends State<Home_screen> {
   return getStructuredGridCell(photos[index]);
   }),
   ))*/
-  Icon keyloch = new Icon(
+  Icon keyloch = Icon(
     Icons.arrow_forward,
     color: Colors.black26,
   );
@@ -642,6 +695,4 @@ class home extends State<Home_screen> {
   _verticalD() => Container(
         margin: EdgeInsets.only(left: 5.0, right: 0.0, top: 5.0, bottom: 0.0),
       );
-
-
 }
