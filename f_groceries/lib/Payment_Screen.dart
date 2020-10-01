@@ -30,6 +30,7 @@ class payment extends State<Patment> {
     assert(false);
     return null;
   }
+
   int radioValue = 0;
   void handleRadioValueChanged(int value) {
     setState(() {
@@ -65,17 +66,17 @@ class payment extends State<Patment> {
       title: Text(toolbarname),
       backgroundColor: Colors.white,
       actions: <Widget>[
-        new Padding(
+        Padding(
           padding: const EdgeInsets.all(10.0),
-          child: new Container(
+          child: Container(
             height: 150.0,
             width: 30.0,
-            child: new GestureDetector(
+            child: GestureDetector(
               onTap: () {
                 /*Navigator.of(context).push(
-                  new MaterialPageRoute(
+                   MaterialPageRoute(
                       builder:(BuildContext context) =>
-                      new CartItemsScreen()
+                       CartItemsScreen()
                   )
               );*/
               },
@@ -85,10 +86,10 @@ class payment extends State<Patment> {
       ],
     );
 
-    return new Scaffold(
+    return Scaffold(
       key: _scaffoldKey,
       appBar: appBar,
-      body: new Column(
+      body: Column(
         children: <Widget>[
           Container(
               margin: EdgeInsets.all(5.0),
@@ -167,11 +168,11 @@ class payment extends State<Patment> {
                               fontSize: 13.0, color: Colors.black87))),
                 ),
               )),
-          new Container(
+          Container(
             alignment: Alignment.topLeft,
             margin:
                 EdgeInsets.only(left: 12.0, top: 5.0, right: 0.0, bottom: 5.0),
-            child: new Text(
+            child: Text(
               'Payment Method',
               style: TextStyle(
                   color: Colors.black87,
@@ -180,7 +181,7 @@ class payment extends State<Patment> {
             ),
           ),
           _verticalDivider(),
-          new Container(
+          Container(
               height: 264.0,
               margin: EdgeInsets.all(10.0),
               child: Card(
@@ -199,9 +200,7 @@ class payment extends State<Patment> {
                                 style: TextStyle(
                                     fontSize: 15.0, color: Colors.black)),
                             Radio<int>(
-                                value: 0,
-                                groupValue: 0,
-                                onChanged: null),
+                                value: 0, groupValue: 0, onChanged: null),
                           ],
                         ),
                       ),
@@ -254,9 +253,7 @@ class payment extends State<Patment> {
                                   style: TextStyle(
                                       fontSize: 15.0, color: Colors.black)),
                               Radio<int>(
-                                  value: 0,
-                                  groupValue: 0,
-                                  onChanged: null),
+                                  value: 0, groupValue: 0, onChanged: null),
                             ],
                           )),
                       Divider(),
@@ -295,7 +292,7 @@ class payment extends State<Patment> {
                             onPressed: () {
                               //   Navigator.push(context, MaterialPageRoute(builder: (context)=> Item_Details()));
                             },
-                            shape: new OutlineInputBorder(
+                            shape: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30.0),
                             )),
                       ),

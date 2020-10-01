@@ -43,7 +43,7 @@ class Setting extends State<Setting_Screen> {
     }
 
     final Orientation orientation = MediaQuery.of(context).orientation;
-    return new Scaffold(
+    return Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
           leading: IconButton(
@@ -60,21 +60,21 @@ class Setting extends State<Setting_Screen> {
         body: Container(
           child: Column(
             children: <Widget>[
-              new Container(
+              Container(
                 height: 50.0,
                 alignment: Alignment.topLeft,
                 margin: EdgeInsets.only(top: 7.0),
-                child: new Row(
+                child: Row(
                   children: <Widget>[
                     _verticalD(),
-                    new GestureDetector(
+                    GestureDetector(
                       onTap: () {
                         /*Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => signup_screen()));*/
                       },
-                      child: new Text(
+                      child: Text(
                         'Notification',
                         style: TextStyle(
                             fontSize: 18.0,
@@ -124,21 +124,21 @@ class Setting extends State<Setting_Screen> {
               Container(
                 margin: EdgeInsets.only(top: 15.0),
               ),
-              new Container(
+              Container(
                 height: 50.0,
                 alignment: Alignment.topLeft,
                 margin: EdgeInsets.only(top: 7.0),
-                child: new Row(
+                child: Row(
                   children: <Widget>[
                     _verticalD(),
-                    new GestureDetector(
+                    GestureDetector(
                       onTap: () {
                         /*Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => signup_screen()));*/
                       },
-                      child: new Text(
+                      child: Text(
                         'Legal',
                         style: TextStyle(
                             fontSize: 18.0,
@@ -193,7 +193,7 @@ class Setting extends State<Setting_Screen> {
                                               Navigator.pop(context,
                                                   DialogDemoAction.disagree);
                                             }),
-                                      /*  FlatButton(
+                                        /*  FlatButton(
                                             child: const Text('AGREE'),
                                             onPressed: () {
                                               Navigator.pop(context,
@@ -238,7 +238,7 @@ class Setting extends State<Setting_Screen> {
                                                 Navigator.pop(context,
                                                     DialogDemoAction.disagree);
                                               }),
-                                         /* FlatButton(
+                                          /* FlatButton(
                                               child: const Text('AGREE'),
                                               onPressed: () {
                                                 Navigator.pop(context,

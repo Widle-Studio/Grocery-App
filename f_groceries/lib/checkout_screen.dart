@@ -60,17 +60,17 @@ class check_out extends State<Checkout> {
       title: Text(toolbarname),
       backgroundColor: Colors.white,
       actions: <Widget>[
-        new Padding(
+        Padding(
           padding: const EdgeInsets.all(10.0),
-          child: new Container(
+          child: Container(
             height: 150.0,
             width: 30.0,
-            child: new GestureDetector(
+            child: GestureDetector(
               onTap: () {
                 /*Navigator.of(context).push(
-                  new MaterialPageRoute(
+                   MaterialPageRoute(
                       builder:(BuildContext context) =>
-                      new CartItemsScreen()
+                       CartItemsScreen()
                   )
               );*/
               },
@@ -80,10 +80,10 @@ class check_out extends State<Checkout> {
       ],
     );
 
-    return new Scaffold(
+    return Scaffold(
       key: _scaffoldKey,
       appBar: appBar,
-      body: new Column(
+      body: Column(
         children: <Widget>[
           Container(
               margin: EdgeInsets.all(5.0),
@@ -147,11 +147,11 @@ class check_out extends State<Checkout> {
                         ],
                       )))),
           _verticalDivider(),
-          new Container(
+          Container(
             alignment: Alignment.topLeft,
             margin:
                 EdgeInsets.only(left: 12.0, top: 5.0, right: 0.0, bottom: 5.0),
-            child: new Text(
+            child: Text(
               'Delivery Address',
               style: TextStyle(
                   color: Colors.black87,
@@ -159,7 +159,7 @@ class check_out extends State<Checkout> {
                   fontSize: 18.0),
             ),
           ),
-          new Container(
+          Container(
               height: 165.0,
               child: ListView(
                 scrollDirection: Axis.horizontal,
@@ -172,7 +172,7 @@ class check_out extends State<Checkout> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          new Container(
+                          Container(
                               alignment: Alignment.center,
                               child: IconButton(
                                   icon: Icon(Icons.add), onPressed: null)),
@@ -189,9 +189,9 @@ class check_out extends State<Checkout> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          new Column(
+                          Column(
                             children: <Widget>[
-                              new Container(
+                              Container(
                                 margin: EdgeInsets.only(
                                     left: 12.0,
                                     top: 5.0,
@@ -200,7 +200,7 @@ class check_out extends State<Checkout> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    new Text(
+                                    Text(
                                       'Naomi A. Schultz',
                                       style: TextStyle(
                                         color: Colors.black87,
@@ -210,7 +210,7 @@ class check_out extends State<Checkout> {
                                       ),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       '2585 Columbia Boulevard',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -218,7 +218,7 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       'Salisbury',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -226,14 +226,14 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       'MD 21801',
                                       style: TextStyle(
                                           color: Colors.black45,
                                           fontSize: 13.0,
                                           letterSpacing: 0.5),
                                     ),
-                                    new Container(
+                                    Container(
                                       margin: EdgeInsets.only(
                                           left: 00.0,
                                           top: 05.0,
@@ -245,7 +245,7 @@ class check_out extends State<Checkout> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.start,
                                         children: <Widget>[
-                                          new Text(
+                                          Text(
                                             'Delivery Address',
                                             style: TextStyle(
                                               fontSize: 15.0,
@@ -253,7 +253,7 @@ class check_out extends State<Checkout> {
                                             ),
                                           ),
                                           _verticalD(),
-                                          new Checkbox(
+                                          Checkbox(
                                             value: checkboxValueA,
                                             onChanged: (bool value) {
                                               setState(() {
@@ -282,9 +282,9 @@ class check_out extends State<Checkout> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          new Column(
+                          Column(
                             children: <Widget>[
-                              new Container(
+                              Container(
                                 margin: EdgeInsets.only(
                                     left: 12.0,
                                     top: 5.0,
@@ -293,7 +293,7 @@ class check_out extends State<Checkout> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    new Text(
+                                    Text(
                                       'Lisa J. Cunningham',
                                       style: TextStyle(
                                         color: Colors.black87,
@@ -303,7 +303,7 @@ class check_out extends State<Checkout> {
                                       ),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       '49 Bagwell Avenue',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -311,7 +311,7 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       'Ocala',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -319,14 +319,14 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       ' FL 34471',
                                       style: TextStyle(
                                           color: Colors.black45,
                                           fontSize: 13.0,
                                           letterSpacing: 0.5),
                                     ),
-                                    new Container(
+                                    Container(
                                       margin: EdgeInsets.only(
                                           left: 00.0,
                                           top: 05.0,
@@ -338,7 +338,7 @@ class check_out extends State<Checkout> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.start,
                                         children: <Widget>[
-                                          new Text(
+                                          Text(
                                             'Delivery Address',
                                             style: TextStyle(
                                               fontSize: 15.0,
@@ -346,7 +346,7 @@ class check_out extends State<Checkout> {
                                             ),
                                           ),
                                           _verticalD(),
-                                          new Checkbox(
+                                          Checkbox(
                                             value: checkboxValueB,
                                             onChanged: (bool value) {
                                               setState(() {
@@ -375,9 +375,9 @@ class check_out extends State<Checkout> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          new Column(
+                          Column(
                             children: <Widget>[
-                              new Container(
+                              Container(
                                 margin: EdgeInsets.only(
                                     left: 12.0,
                                     top: 5.0,
@@ -386,7 +386,7 @@ class check_out extends State<Checkout> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
-                                    new Text(
+                                    Text(
                                       'Elizabeth J. Schmidt',
                                       style: TextStyle(
                                         color: Colors.black87,
@@ -396,7 +396,7 @@ class check_out extends State<Checkout> {
                                       ),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       '3674 Oakway Lane',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -404,7 +404,7 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       'Long Beach',
                                       style: TextStyle(
                                           color: Colors.black45,
@@ -412,14 +412,14 @@ class check_out extends State<Checkout> {
                                           letterSpacing: 0.5),
                                     ),
                                     _verticalDivider(),
-                                    new Text(
+                                    Text(
                                       ' CA 90802',
                                       style: TextStyle(
                                           color: Colors.black45,
                                           fontSize: 13.0,
                                           letterSpacing: 0.5),
                                     ),
-                                    new Container(
+                                    Container(
                                       margin: EdgeInsets.only(
                                           left: 00.0,
                                           top: 05.0,
@@ -431,7 +431,7 @@ class check_out extends State<Checkout> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.start,
                                         children: <Widget>[
-                                          new Text(
+                                          Text(
                                             'Delivery Address',
                                             style: TextStyle(
                                               fontSize: 15.0,
@@ -439,7 +439,7 @@ class check_out extends State<Checkout> {
                                             ),
                                           ),
                                           _verticalD(),
-                                          new Checkbox(
+                                          Checkbox(
                                             value: checkboxValueC,
                                             onChanged: (bool value) {
                                               setState(() {
@@ -462,11 +462,11 @@ class check_out extends State<Checkout> {
                 ],
               )),
           _verticalDivider(),
-          new Container(
+          Container(
             alignment: Alignment.topLeft,
             margin:
                 EdgeInsets.only(left: 12.0, top: 5.0, right: 0.0, bottom: 5.0),
-            child: new Text(
+            child: Text(
               'Order Summary',
               style: TextStyle(
                   color: Colors.black87,
@@ -488,30 +488,26 @@ class check_out extends State<Checkout> {
                         Container(
                           padding: EdgeInsets.all(5.0),
                           child: Row(
-
-                                  mainAxisSize: MainAxisSize.max,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: <Widget>[
-
-                                    Text(itemList[ind].itemName,
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            color: Colors.black87,
-                                            fontWeight: FontWeight.bold)),
-                                    Text(itemList[ind].itemQun,
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            color: Colors.black87,
-                                            fontWeight: FontWeight.bold)),
-                                    Text(itemList[ind].itemPrice,
-                                        style: TextStyle(
-                                            fontSize: 16.0,
-                                            color: Colors.black87,
-                                            fontWeight: FontWeight.bold)),
-                                  ],
-
+                            mainAxisSize: MainAxisSize.max,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Text(itemList[ind].itemName,
+                                  style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold)),
+                              Text(itemList[ind].itemQun,
+                                  style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold)),
+                              Text(itemList[ind].itemPrice,
+                                  style: TextStyle(
+                                      fontSize: 16.0,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.bold)),
+                            ],
                           ),
                         ),
                       ],
@@ -552,7 +548,7 @@ class check_out extends State<Checkout> {
                                   MaterialPageRoute(
                                       builder: (context) => Patment()));
                             },
-                            shape: new OutlineInputBorder(
+                            shape: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(30.0),
                             )),
                       ),
@@ -564,6 +560,7 @@ class check_out extends State<Checkout> {
       ),
     );
   }
+
   IconData _add_icon() {
     switch (Theme.of(context).platform) {
       case TargetPlatform.android:
@@ -575,6 +572,7 @@ class check_out extends State<Checkout> {
     assert(false);
     return null;
   }
+
   IconData _sub_icon() {
     switch (Theme.of(context).platform) {
       case TargetPlatform.android:

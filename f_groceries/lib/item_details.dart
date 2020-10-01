@@ -15,15 +15,14 @@ class item_details extends State<Item_Details> {
 
   String itemname = 'Apple';
   int item = 0;
-  String itemprice= '\$15';
-
+  String itemprice = '\$15';
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     final ThemeData theme = Theme.of(context);
     final TextStyle titleStyle =
-    theme.textTheme.headline.copyWith(color: Colors.white);
+        theme.textTheme.headline.copyWith(color: Colors.white);
     final TextStyle descriptionStyle = theme.textTheme.subhead;
     IconData _backIcon() {
       switch (Theme.of(context).platform) {
@@ -48,6 +47,7 @@ class item_details extends State<Item_Details> {
       assert(false);
       return null;
     }
+
     IconData _sub_icon() {
       switch (Theme.of(context).platform) {
         case TargetPlatform.android:
@@ -59,7 +59,8 @@ class item_details extends State<Item_Details> {
       assert(false);
       return null;
     }
-    return new Scaffold(
+
+    return Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
           leading: IconButton(
@@ -73,44 +74,47 @@ class item_details extends State<Item_Details> {
           title: Text(toolbarname),
           backgroundColor: Colors.white,
           actions: <Widget>[
-            new Padding(
+            Padding(
               padding: const EdgeInsets.all(10.0),
-              child: new Container(
+              child: Container(
                 height: 150.0,
                 width: 30.0,
-                child: new GestureDetector(
+                child: GestureDetector(
                   onTap: () {
                     /*Navigator.of(context).push(
-                  new MaterialPageRoute(
+                   MaterialPageRoute(
                       builder:(BuildContext context) =>
-                      new CartItemsScreen()
+                       CartItemsScreen()
                   )
               );*/
                   },
                   child: Stack(
                     children: <Widget>[
-                      new IconButton(
-                          icon: new Icon(
+                      IconButton(
+                          icon: Icon(
                             Icons.shopping_cart,
                             color: Colors.black,
                           ),
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) =>Checkout()));
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Checkout()));
                           }),
                       list.length == 0
-                          ? new Container()
-                          : new Positioned(
-                              child: new Stack(
+                          ? Container()
+                          : Positioned(
+                              child: Stack(
                               children: <Widget>[
-                                new Icon(Icons.brightness_1,
+                                Icon(Icons.brightness_1,
                                     size: 20.0, color: Colors.orange.shade500),
-                                new Positioned(
+                                Positioned(
                                     top: 4.0,
                                     right: 5.5,
-                                    child: new Center(
-                                      child: new Text(
+                                    child: Center(
+                                      child: Text(
                                         list.length.toString(),
-                                        style: new TextStyle(
+                                        style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 11.0,
                                             fontWeight: FontWeight.w500),
@@ -127,125 +131,114 @@ class item_details extends State<Item_Details> {
         ),
         body: Container(
             padding: const EdgeInsets.all(8.0),
-
-            child:SingleChildScrollView(
-
-              child: Column(
-              children: <Widget>[
-
-             Card(
-               elevation: 4.0,
-              child:Container(
-                color: Colors.white,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    // photo and title
-                    SizedBox(
-                      height: 250.0,
-
-                      child: Stack(
-                        alignment: Alignment.center,
-
+            child: SingleChildScrollView(
+                child: Column(children: <Widget>[
+              Card(
+                elevation: 4.0,
+                child: Container(
+                  color: Colors.white,
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        // photo and title
+                        SizedBox(
+                          height: 250.0,
+                          child: Stack(
+                            alignment: Alignment.center,
+                            children: <Widget>[
+                              Container(
+                                child: Carousel(
+                                  images: [
+                                    AssetImage(
+                                      'images/apple.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                    AssetImage(
+                                      'images/tomato.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                    AssetImage(
+                                      'images/lemons.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                    AssetImage(
+                                      'images/kiwi.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                    AssetImage(
+                                      'images/guava.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                    AssetImage(
+                                      'images/grapes.jpg',
+                                      // package: destination.assetPackage,
+                                    ),
+                                  ],
+                                  boxFit: BoxFit.scaleDown,
+                                  showIndicator: false,
+                                  autoplay: false,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ]),
+                ),
+              ),
+              Container(
+                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+                  child: DefaultTextStyle(
+                      style: descriptionStyle,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
-                          new Container(
-                            child: new Carousel(
-                              images: [
-                                new AssetImage(
-                                  'images/apple.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                                new AssetImage(
-                                  'images/tomato.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                                new AssetImage(
-                                  'images/lemons.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                                new AssetImage(
-                                  'images/kiwi.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                                new AssetImage(
-                                  'images/guava.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                                new AssetImage(
-                                  'images/grapes.jpg',
-                                  // package: destination.assetPackage,
-                                ),
-                              ],
-                              boxFit: BoxFit.scaleDown,
-                              showIndicator: false,
-
-                              autoplay: false,
+                          // three line description
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8.0),
+                            child: Text(
+                              itemname,
+                              style: descriptionStyle.copyWith(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87),
                             ),
-                          )
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8.0),
+                            child: Text(
+                              itemprice,
+                              style: descriptionStyle.copyWith(
+                                  fontSize: 20.0, color: Colors.black54),
+                            ),
+                          ),
                         ],
-                      ),
-
-                    ),
-                  ]),
-            ),
-             ),
-
-             Container(
-               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-               child: DefaultTextStyle(
-                 style: descriptionStyle,
-                 child: Row(
-                     mainAxisSize: MainAxisSize.max,
-                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                     children: <Widget>[
-                 // three line description
-                 Padding(
-                 padding: const EdgeInsets.only(bottom: 8.0),
-                 child: Text(
-                 itemname,
-                 style: descriptionStyle.copyWith(
-                   fontSize: 20.0,
-                 fontWeight: FontWeight.bold,
-                 color: Colors.black87),
-               ),
-             ),
-             Padding(
-               padding: const EdgeInsets.only(bottom: 8.0),
-               child: Text(
-                 itemprice,
-                 style: descriptionStyle.copyWith(
-                   fontSize: 20.0,
-                     color: Colors.black54),
-               ),
-             ),
-              ],
-            )
-        )
-             ),
-                Container(
+                      ))),
+              Container(
                   margin: EdgeInsets.all(10.0),
                   child: Card(
                       child: Container(
-                          padding: const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
+                          padding:
+                              const EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 20.0),
                           child: DefaultTextStyle(
                               style: descriptionStyle,
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   // three line description
                                   Row(
                                     children: <Widget>[
-                                      new IconButton(
-                                        icon: Icon(_add_icon(),color: Colors.amber.shade500),
+                                      IconButton(
+                                        icon: Icon(_add_icon(),
+                                            color: Colors.amber.shade500),
                                         onPressed: () {
-
-                                            item = item + 1;
-
+                                          item = item + 1;
                                         },
                                       ),
                                       Container(
-                                        margin: EdgeInsets.only(left:2.0),
+                                        margin: EdgeInsets.only(left: 2.0),
                                       ),
                                       Text(
                                         item.toString(),
@@ -254,16 +247,15 @@ class item_details extends State<Item_Details> {
                                             color: Colors.black87),
                                       ),
                                       Container(
-                                        margin: EdgeInsets.only(right:2.0),
+                                        margin: EdgeInsets.only(right: 2.0),
                                       ),
-                                      new IconButton(
-                                        icon: Icon(_sub_icon(),color: Colors.amber.shade500),
+                                      IconButton(
+                                        icon: Icon(_sub_icon(),
+                                            color: Colors.amber.shade500),
                                         onPressed: () {
-                                          if(item<0){
-
-                                          }
-                                          else{
-                                            item = item -1;
+                                          if (item < 0) {
+                                          } else {
+                                            item = item - 1;
                                           }
                                         },
                                       ),
@@ -272,63 +264,55 @@ class item_details extends State<Item_Details> {
 
                                   Padding(
                                     padding: const EdgeInsets.only(bottom: 8.0),
-                                    child:  Container(
+                                    child: Container(
                                       alignment: Alignment.center,
                                       child: OutlineButton(
-                                          borderSide: BorderSide(color: Colors.amber.shade500),
+                                          borderSide: BorderSide(
+                                              color: Colors.amber.shade500),
                                           child: const Text('Add'),
                                           textColor: Colors.amber.shade500,
                                           onPressed: () {
-                                            Navigator.push(context, MaterialPageRoute(builder: (context)=> Cart_screen()));
+                                            Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        Cart_screen()));
                                           },
-                                          shape: new OutlineInputBorder(
-                                            borderRadius: BorderRadius.circular(30.0),
+                                          shape: OutlineInputBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(30.0),
                                           )),
                                     ),
                                   ),
                                 ],
-                              )
-                          )
-                      )
-                  )
-                ),
-
-             Container(
-                 padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-                 child: DefaultTextStyle(
-                     style: descriptionStyle,
-                     child: Row(
-                       mainAxisSize: MainAxisSize.max,
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: <Widget>[
-                         // three line description
-                         Padding(
-                           padding: const EdgeInsets.only(bottom: 8.0),
-                           child: Text(
-                             'Details',
-                             style: descriptionStyle.copyWith(
-                                 fontSize: 20.0,
-                                 fontWeight: FontWeight.bold,
-                                 color: Colors.black87),
-                           ),
-                         ),
-                       ],
-                     )
-                 )
-             ),
-             Container(
-                 padding: const EdgeInsets.fromLTRB(20.0, 10.0, 10.0, 0.0),
-
-                          child: Text("Grocery stores also offer non-perishable foods that are packaged in bottles, boxes, and cans; some also have bakeries, butchers, delis, and fresh produce. Large grocery stores that stock significant amounts of non-food products, such as clothing and household items, are called supermarkets. Some large supermarkets also include a pharmacy, and customer service, redemption, and electronics sections.",
-                            maxLines: 10,
-                            style: TextStyle(fontSize: 13.0,color: Colors.black38)
-                          )
-             ),
-
-    ]
-    )
-    )
-        )
-    );
+                              ))))),
+              Container(
+                  padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+                  child: DefaultTextStyle(
+                      style: descriptionStyle,
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          // three line description
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 8.0),
+                            child: Text(
+                              'Details',
+                              style: descriptionStyle.copyWith(
+                                  fontSize: 20.0,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87),
+                            ),
+                          ),
+                        ],
+                      ))),
+              Container(
+                  padding: const EdgeInsets.fromLTRB(20.0, 10.0, 10.0, 0.0),
+                  child: Text(
+                      "Grocery stores also offer non-perishable foods that are packaged in bottles, boxes, and cans; some also have bakeries, butchers, delis, and fresh produce. Large grocery stores that stock significant amounts of non-food products, such as clothing and household items, are called supermarkets. Some large supermarkets also include a pharmacy, and customer service, redemption, and electronics sections.",
+                      maxLines: 10,
+                      style: TextStyle(fontSize: 13.0, color: Colors.black38))),
+            ]))));
   }
 }

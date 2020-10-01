@@ -2,15 +2,14 @@ import 'package:f_groceries/HomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-
-void main() => runApp(new MyApp());
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-        theme: new ThemeData(
+    return MaterialApp(
+      theme: ThemeData(
           // This is the theme of your application.
           //
           // Try running your application with "flutter run". You'll see the
@@ -20,12 +19,10 @@ class MyApp extends StatelessWidget {
           // or press Run > Flutter Hot Reload in IntelliJ). Notice that the
           // counter didn't reset back to zero; the application is not restarted.
 
-            primaryColor: Colors.white,
-            primaryColorDark: Colors.white30,
-            accentColor: Colors.blue
-
-        ),
-      home: new MyHomePage(title: 'Groceries'),
+          primaryColor: Colors.white,
+          primaryColorDark: Colors.white30,
+          accentColor: Colors.blue),
+      home: MyHomePage(title: 'Groceries'),
     );
   }
 }
@@ -45,19 +42,18 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  _MyHomePageState createState() => new _MyHomePageState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   startTime() async {
-    var _duration = new Duration(seconds: 3);
-    return new Timer(_duration, navigationPage);
+    var _duration = Duration(seconds: 3);
+    return Timer(_duration, navigationPage);
   }
 
   void navigationPage() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => Home_screen()));
-
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => Home_screen()));
   }
 
   @override
@@ -65,23 +61,23 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     startTime();
   }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    return new Container(
+    return Container(
       alignment: Alignment.center,
-      decoration: new BoxDecoration(color: Colors.white),
-      child: new Container(
+      decoration: BoxDecoration(color: Colors.white),
+      child: Container(
         color: Colors.black12,
-        margin: new EdgeInsets.all(30.0),
+        margin: EdgeInsets.all(30.0),
         width: 250.0,
         height: 250.0,
-        child: new Image.asset(
+        child: Image.asset(
           'images/gro.jpg',
         ),
       ),
     );
   }
-
 }
