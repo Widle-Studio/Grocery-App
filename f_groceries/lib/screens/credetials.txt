@@ -1,0 +1,2 @@
+Consumer_key = ck_742e8cb6f82ad59628fb8a2a9dde0fbb9ddba5c0
+Consumer secret = cs_64994bcbf7e73ff726788de1d0ddfbc523dc0c4a

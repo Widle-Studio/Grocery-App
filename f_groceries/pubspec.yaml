@@ -24,6 +24,45 @@ dependencies:
   flutter_range_slider: "^1.0.1"
   carousel_pro: ^0.0.13
 
+  html_unescape: ^1.0.1+3
+
+  shared_preferences: ^0.5.7+2
+  http:
+  cached_network_image: ^2.2.0+1
+
+  flutter_html: ^1.0.0
+
+  firebase_auth: 0.16.0
+  
+  google_sign_in:
+
+  progress_dialog: ^1.2.3
+  
+  flutter_swiper : ^1.1.6
+  google_fonts: ^1.1.0
+
+  geolocator: ^5.3.1
+
+  geocoder: ^0.2.1
+
+  location: ^3.0.2
+
+  razorpay_flutter: 1.1.1
+
+  dio: ^3.0.9
+  cloud_firestore: ^0.13.6
+
+  firebase_messaging: ^6.0.16
+  html: ^0.14.0+3
+  image_picker: ^0.6.7+2
+
+  image_cropper: ^1.2.3
+
+  firebase_storage: ^3.1.6
+
+  device_preview: ^0.4.5
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -60,6 +99,7 @@ flutter:
      - images/pineapple.jpg
      - images/tomato.jpg
      - images/gro.jpg
+     - images/google_logo.png
 
 
 
@@ -70,7 +110,14 @@ flutter:
 
 
 
-
+  fonts:
+    - family: openSans
+      fonts:
+        - asset: fonts/OpenSans-Bold.ttf
+        - asset: fonts/OpenSans-BoldItalic.ttf
+        - asset: fonts/OpenSans-Regular.ttf
+        - asset: fonts/OpenSans-Italic.ttf
+          style: italic
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

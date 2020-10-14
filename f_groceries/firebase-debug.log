@@ -1,0 +1,28 @@
+[debug] [2020-06-06T09:01:34.528Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T09:01:34.530Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-06-06T09:01:34.531Z] CLI Version:   8.4.2
+[debug] [2020-06-06T09:01:34.531Z] Platform:      win32
+[debug] [2020-06-06T09:01:34.531Z] Node Version:  v10.16.0
+[debug] [2020-06-06T09:01:34.532Z] Time:          Sat Jun 06 2020 14:31:34 GMT+0530 (India Standard Time)
+[debug] [2020-06-06T09:01:34.532Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T09:01:34.533Z] 
+[debug] [2020-06-06T09:01:34.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-06T09:01:34.582Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\Widle_project\Grocery-App\f_groceries
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
