@@ -1,8 +1,8 @@
 # Grocery-App (Widle Studio - A Creative <a href="https://widle.studio">Flutter App Development</a> Company) OR <a href="https://forms.gle/48qC6D8AvJUNzrYi6">Get an Estimate</a>
 
-## Flutter Grocery Shopping App Fully Working Template with WooCommerce API integration
+## Flutter Grocery Shopping App Fully Working Template
 
-Grocery Shopping Flutter app is created as a wonderful solution for any food shop Flutter App UI template and WooCommerce API integration.
+Grocery Shopping Flutter app is created as a wonderful solution for any food shop Flutter App UI template
 
 It is a template for an Flutter developer that want to create grocery application with a clean design. The template is only lay outing without data flow and communication with the backend system. This Flutter UI Template can reduce your development time and will loved by developer that hate lay outing design!
 
