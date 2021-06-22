@@ -59,11 +59,11 @@ class item extends State<Item_Screen> {
       switch (Theme.of(context).platform) {
         case TargetPlatform.android:
         case TargetPlatform.fuchsia:
+        case TargetPlatform.fuchsia:
           return Icons.arrow_back;
         case TargetPlatform.iOS:
           return Icons.arrow_back_ios;
       }
-      assert(false);
       return null;
     }
 

@@ -28,11 +28,11 @@ class item_details extends State<Item_Details> {
       switch (Theme.of(context).platform) {
         case TargetPlatform.android:
         case TargetPlatform.fuchsia:
+        case TargetPlatform.windows:
           return Icons.arrow_back;
         case TargetPlatform.iOS:
           return Icons.arrow_back_ios;
       }
-      assert(false);
       return null;
     }
 
@@ -40,11 +40,11 @@ class item_details extends State<Item_Details> {
       switch (Theme.of(context).platform) {
         case TargetPlatform.android:
         case TargetPlatform.fuchsia:
+        case TargetPlatform.windows:
           return Icons.add_circle;
         case TargetPlatform.iOS:
           return Icons.add_circle;
       }
-      assert(false);
       return null;
     }
 
@@ -52,11 +52,11 @@ class item_details extends State<Item_Details> {
       switch (Theme.of(context).platform) {
         case TargetPlatform.android:
         case TargetPlatform.fuchsia:
+        case TargetPlatform.windows:
           return Icons.remove_circle;
         case TargetPlatform.iOS:
           return Icons.remove_circle;
       }
-      assert(false);
       return null;
     }
 
