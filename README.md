@@ -12,7 +12,6 @@ You can use this Flutter app as one big super market app to sale product of your
 
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Animation%20-11-01-11-57-17-742%5B1%5D-ANIMATION.gif" alt="Flutter Grocery Shopping App Video Animation" height="700" width="400">
 
-<img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Expand%20your%20presence%20through%20%20Digital%20Grocery%20Store%20-%20Technology%20in%20the%20Life%20of%20Consumers%20Technology%20(1).png" alt="Flutter Grocery Shopping App Video Animation" height="600">
 
 
  1. Home
