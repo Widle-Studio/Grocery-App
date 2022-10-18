@@ -1,4 +1,4 @@
-# Grocery-App (Widle Studio - A Creative <a href="https://widle.studio">Flutter App Development</a> Company) OR <a href="https://forms.gle/L9EBUnSasYcUAn8Q9">Get an Estimate</a>
+# Grocery-App
 
 ## Flutter Grocery Shopping App Fully Working Template with WooCommerce API integration
 
@@ -33,4 +33,3 @@ You can use this Flutter app as one big super market app to sale product of your
 <img src="https://github.com/Widle-Studio/Grocery-App/blob/master/ScreenShot/Screenshot_2018-11-01-12-00-01-234.jpeg" alt="Grocery Details" height="700" width="400">
 
 
-Contact <b>Widle Studio</b> for creative flutter app development 
