@@ -1,4 +1,7 @@
-# Grocery-App
+# Grocery-Platform
+
+Become a financial contributor - <img alt="open collective badge" src="https://opencollective.com/grocery-platform/tiers/backers/badge.svg?label=backer&color=brightgreen" />
+
 
 ## Flutter Grocery Shopping App Fully Working Template with WooCommerce API integration
 
