@@ -27,8 +27,8 @@ class Help extends State<Help_Screen> {
   Widget build(BuildContext context) {
     // TODO: implement build
     final ThemeData theme = Theme.of(context);
-    final TextStyle dialogTextStyle =
-        theme.textTheme.subhead.copyWith(color: theme.textTheme.caption.color);
+    final TextStyle dialogTextStyle = theme.textTheme.subtitle1
+        .copyWith(color: theme.textTheme.caption.color);
 
     IconData _backIcon() {
       switch (Theme.of(context).platform) {
@@ -37,6 +37,15 @@ class Help extends State<Help_Screen> {
           return Icons.arrow_back;
         case TargetPlatform.iOS:
           return Icons.arrow_back_ios;
+        case TargetPlatform.linux:
+          // TODO: Handle this case.
+          break;
+        case TargetPlatform.macOS:
+          // TODO: Handle this case.
+          break;
+        case TargetPlatform.windows:
+          // TODO: Handle this case.
+          break;
       }
       assert(false);
       return null;
@@ -123,7 +132,7 @@ class Help extends State<Help_Screen> {
                                           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                                           style: dialogTextStyle),
                                       actions: <Widget>[
-                                        FlatButton(
+                                        ElevatedButton(
                                             child: const Text('DISAGREE'),
                                             onPressed: () {
                                               Navigator.pop(context,
@@ -167,7 +176,7 @@ class Help extends State<Help_Screen> {
                                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                                             style: dialogTextStyle),
                                         actions: <Widget>[
-                                          FlatButton(
+                                          ElevatedButton(
                                               child: const Text('DISAGREE'),
                                               onPressed: () {
                                                 Navigator.pop(context,
@@ -210,7 +219,7 @@ class Help extends State<Help_Screen> {
                                             "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                                             style: dialogTextStyle),
                                         actions: <Widget>[
-                                          FlatButton(
+                                          ElevatedButton(
                                               child: const Text('DISAGREE'),
                                               onPressed: () {
                                                 Navigator.pop(context,
@@ -257,7 +266,7 @@ class Help extends State<Help_Screen> {
 
   Widget _status(status) {
     if (status == 'Cabcel Order') {
-      return FlatButton.icon(
+      return ElevatedButton.icon(
           label: Text(
             status,
             style: TextStyle(color: Colors.red),
@@ -271,7 +280,7 @@ class Help extends State<Help_Screen> {
             // Perform some action
           });
     } else {
-      return FlatButton.icon(
+      return ElevatedButton.icon(
           label: Text(
             status,
             style: TextStyle(color: Colors.green),

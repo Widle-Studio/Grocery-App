@@ -79,8 +79,8 @@ class home extends State<Home_screen> {
     final Orientation orientation = MediaQuery.of(context).orientation;
     final ThemeData theme = Theme.of(context);
     final TextStyle titleStyle =
-        theme.textTheme.headline.copyWith(color: Colors.black54);
-    final TextStyle descriptionStyle = theme.textTheme.subhead;
+        theme.textTheme.headline1.copyWith(color: Colors.black54);
+    final TextStyle descriptionStyle = theme.textTheme.subtitle1;
     ShapeBorder shapeBorder;
 
     return Scaffold(
