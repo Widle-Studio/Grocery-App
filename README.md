@@ -18,8 +18,8 @@ Become a financial contributor - <img alt="open collective badge" src="https://o
 Dart SDK Version 2.17.0 or greater.
 Flutter SDK Version 3.0.0 or greater.
 
-### Figma design guidelines for better accuracy
-
+### Design System for better accuracy
+<img src="https://github.com/Widle-Studio/Grocery-App/blob/Grocery-App/Grocery%20App/grocery-app.png" alt="Flutter Grocery Shopping App Video Animation">
 
 
 ### App Navigations
