@@ -241,7 +241,7 @@ class SplashPhoneNumberScreen extends GetWidget<SplashPhoneNumberController> {
                                 Container(
                                   margin: getMargin(
                                     left: 15,
-                                    top: 105,
+                                    top: 90,
                                     right: 15,
                                     bottom: 34,
                                   ),
